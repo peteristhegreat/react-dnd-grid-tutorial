@@ -1,4 +1,4 @@
-export default [
+const sample_items = [
   {
     src:
       "https://images.pexels.com/photos/2575279/pexels-photo-2575279.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
@@ -45,3 +45,5 @@ export default [
     id: "5"
   }
 ];
+
+export { sample_items };

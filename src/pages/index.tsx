@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
-import DragItem from "./DragItem";
-import { Grid, GridImage, GridItem } from "./Grid";
-import GridContext from "./GridContext";
+
+import DragItem from "@/components/DragItem";
+import GridContext from "@/contexts/GridContext";
+import { Grid, GridImage, GridItem } from "@/components/Grid";
 
 function App() {
   const { items, moveItem } = useContext(GridContext);
@@ -9,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <Grid>
-        {items.map(item => (
+        {items.map((item) => (
           <DragItem key={item.id} id={item.id} onMoveItem={moveItem}>
             <GridItem>
               <GridImage src={item.src}></GridImage>
